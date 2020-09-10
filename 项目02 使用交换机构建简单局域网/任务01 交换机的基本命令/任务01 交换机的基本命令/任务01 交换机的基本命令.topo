@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="CCCBF716-E023-4abc-B26E-F67C270AF2DF" name="LSW1" poe="0" model="S3700" settings="" system_mac="4C-1F-CC-CF-1E-6B" com_port="2000" bootmode="0" cx="174.000000" cy="172.000000" edit_left="201" edit_top="226">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="22" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines />
+    <shapes />
+    <txttips />
+</topo>
