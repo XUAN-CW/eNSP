@@ -13,12 +13,7 @@
                 <interface sztype="Ethernet" interfacename="GE" count="2" />
             </slot>
         </dev>
-        <dev id="8C9CD843-1D2B-48de-9092-8D7411A079C1" name="LSW3" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-05-01-94" com_port="2002" bootmode="0" cx="573.000000" cy="173.000000" edit_left="600" edit_top="227">
-            <slot number="slot17" isMainBoard="1">
-                <interface sztype="Ethernet" interfacename="GE" count="24" />
-            </slot>
-        </dev>
-        <dev id="0B0D90FD-A942-4f45-99F6-852371F2B77C" name="LSW4" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-69-6B-2F" com_port="2003" bootmode="0" cx="573.000000" cy="573.000000" edit_left="600" edit_top="627">
+        <dev id="0B0D90FD-A942-4f45-99F6-852371F2B77C" name="RS-2" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-69-6B-2F" com_port="2003" bootmode="0" cx="573.000000" cy="573.000000" edit_left="600" edit_top="627">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="GE" count="24" />
             </slot>
@@ -30,23 +25,23 @@
                 <interface sztype="Serial" interfacename="Serial" count="4" />
             </slot>
         </dev>
-        <dev id="287AD99A-24C1-4128-8D12-1E5A8313BECC" name="LSW5" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-8C-42-90" com_port="2007" bootmode="0" cx="1373.000000" cy="173.000000" edit_left="1400" edit_top="227">
+        <dev id="287AD99A-24C1-4128-8D12-1E5A8313BECC" name="RS-3" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-8C-42-90" com_port="2007" bootmode="0" cx="1373.000000" cy="173.000000" edit_left="1400" edit_top="227">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="GE" count="24" />
             </slot>
         </dev>
-        <dev id="73125599-17F5-4806-8FF5-A6F663E52081" name="LSW6" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-41-7C-E4" com_port="2008" bootmode="0" cx="1373.000000" cy="573.000000" edit_left="1400" edit_top="627">
+        <dev id="73125599-17F5-4806-8FF5-A6F663E52081" name="RS-4" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-41-7C-E4" com_port="2008" bootmode="0" cx="1373.000000" cy="573.000000" edit_left="1400" edit_top="627">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="GE" count="24" />
             </slot>
         </dev>
-        <dev id="60A063D5-9096-4c80-AFA8-3645F2780123" name="LSW7" poe="0" model="S3700" settings="" system_mac="4C-1F-CC-D0-51-B3" com_port="2009" bootmode="0" cx="1573.000000" cy="173.000000" edit_left="1600" edit_top="227">
+        <dev id="60A063D5-9096-4c80-AFA8-3645F2780123" name="LSW3" poe="0" model="S3700" settings="" system_mac="4C-1F-CC-D0-51-B3" com_port="2009" bootmode="0" cx="1573.000000" cy="173.000000" edit_left="1600" edit_top="227">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="Ethernet" count="22" />
                 <interface sztype="Ethernet" interfacename="GE" count="2" />
             </slot>
         </dev>
-        <dev id="0CFAE492-040B-45e8-9FA3-1F42B23E689B" name="LSW8" poe="0" model="S3700" settings="" system_mac="4C-1F-CC-B5-0B-82" com_port="2010" bootmode="0" cx="1573.000000" cy="573.000000" edit_left="1600" edit_top="627">
+        <dev id="0CFAE492-040B-45e8-9FA3-1F42B23E689B" name="LSW4" poe="0" model="S3700" settings="" system_mac="4C-1F-CC-B5-0B-82" com_port="2010" bootmode="0" cx="1573.000000" cy="573.000000" edit_left="1600" edit_top="627">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="Ethernet" count="22" />
                 <interface sztype="Ethernet" interfacename="GE" count="2" />
@@ -76,7 +71,7 @@
                 <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
             </slot>
         </dev>
-        <dev id="2EEE4D8E-9613-4989-97AF-42ECE2B677B1" name="PC3" poe="0" model="PC" settings=" -simpc_ip 192.168.66.1  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.66.254  -simpc_mac 54-89-98-61-21-55  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-61-21-55" com_port="0" bootmode="0" cx="173.000000" cy="574.000000" edit_left="200" edit_top="628">
+        <dev id="2EEE4D8E-9613-4989-97AF-42ECE2B677B1" name="PC3" poe="0" model="PC" settings=" -simpc_ip 192.168.66.1  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.66.254  -simpc_mac 54-89-98-61-21-55  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-61-21-55" com_port="0" bootmode="0" cx="173.000000" cy="573.000000" edit_left="200" edit_top="627">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
             </slot>
@@ -106,6 +101,11 @@
                 <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
             </slot>
         </dev>
+        <dev id="8C9CD843-1D2B-48de-9092-8D7411A079C1" name="RS-1" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-05-01-94" com_port="2002" bootmode="0" cx="573.000000" cy="173.000000" edit_left="599" edit_top="227">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
     </devices>
     <lines>
         <line srcDeviceID="4B73023C-49C2-4a14-9815-5054D8EEE5E9" destDeviceID="F5CB4154-8705-4c42-B32A-B8BDCF38643B">
@@ -115,7 +115,7 @@
             <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="230.535538" srcBoundRect_Y="369.464478" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="1" tarBoundRectIsMoved="0" tarBoundRect_X="369.464478" tarBoundRect_Y="230.535538" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
         </line>
         <line srcDeviceID="2EEE4D8E-9613-4989-97AF-42ECE2B677B1" destDeviceID="D852B364-3861-4298-AB72-6D0575A1A1CB">
-            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="243.183228" srcBoundRect_Y="600.784058" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="356.816772" tarBoundRect_Y="600.215942" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="243.183762" srcBoundRect_Y="600.000000" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="356.816223" tarBoundRect_Y="600.000000" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
         </line>
         <line srcDeviceID="FBE685AC-B35B-4753-A76C-9F9D58EED8E5" destDeviceID="D852B364-3861-4298-AB72-6D0575A1A1CB">
             <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="230.535538" srcBoundRect_Y="769.464478" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="1" tarBoundRectIsMoved="0" tarBoundRect_X="369.464478" tarBoundRect_Y="630.535522" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
