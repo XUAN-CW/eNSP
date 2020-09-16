@@ -292,7 +292,7 @@ display vlan
 ```
 system-view
 undo info-center enable
-sysname RS-1
+sysname RS-4
 
 vlan batch 17 18
 
@@ -323,7 +323,7 @@ display vlan
 ```
 system-view
 undo info-center enable
-sysname RS-1
+sysname RS-5
 
 vlan batch 19 20
 
@@ -354,7 +354,7 @@ display vlan
 ```
 system-view
 undo info-center enable
-sysname RS-1
+sysname RS-6
 
 vlan batch 21 22
 
@@ -673,7 +673,7 @@ quit
 interface GigabitEthernet 0/0/3
 ip address 10.0.5.1 30
 quit
-interface Ethernet 0/0/0
+interface Ethernet 0/0/1
 ip address 10.0.0.13 30
 quit
 
@@ -709,53 +709,240 @@ y
 
 ```
 
+# 任务05 配置 OSPF 并进行全网通信测试
+
+### RS-1
+```
+system-view
+ospf 1
+area 1
+network 192.168.64.0 0.0.0.255
+network 192.168.65.0 0.0.0.255
+network 10.0.1.0 0.0.0.3
+quit
+quit
+quit
+save
+y
+
+```
+### RS-2
+```
+system-view
+ospf 1
+area 1
+network 192.168.66.0 0.0.0.255
+network 192.168.67.0 0.0.0.255
+network 10.0.2.0 0.0.0.3
+quit
+quit
+quit
+save
+y
+
+```
+### RS-3
+```
+system-view
+ospf 1
+area 2
+network 192.168.68.0 0.0.0.255
+network 192.168.69.0 0.0.0.255
+network 10.0.3.0 0.0.0.3
+quit
+quit
+quit
+save
+y
+
+```
+### RS-4
+```
+system-view
+ospf 1
+area 2
+network 192.168.70.0 0.0.0.255
+network 192.168.71.0 0.0.0.255
+network 10.0.4.0 0.0.0.3
+quit
+quit
+quit
+save
+y
+
+```
+### RS-5
+```
+system-view
+ospf 1
+area 3
+network 192.168.72.0 0.0.0.255
+network 192.168.73.0 0.0.0.255
+network 10.0.5.0 0.0.0.3
+quit
+quit
+quit
+save
+y
+
+```
+### RS-6
+```
+system-view
+ospf 1
+area 3
+network 192.168.74.0 0.0.0.255
+network 192.168.75.0 0.0.0.255
+network 10.0.6.0 0.0.0.3
+quit
+quit
+quit
+save
+y
+
+```
+
+### R-1
+
+```
+system-view
+ospf 1
+area 0
+network 10.0.0.0 0.0.0.3
+network 10.0.0.4 0.0.0.3
+network 10.0.0.8 0.0.0.3
+quit
+
+area 1
+network 10.0.1.0 0.0.0.3
+network 10.0.2.0 0.0.0.3
+quit
+
+quit
+quit
+save
+y
 
 
+```
+
+### R-2
+
+```
+system-view
+ospf 1
+area 0
+network 10.0.0.8 0.0.0.3
+network 10.0.0.16 0.0.0.3
+quit
+
+area 2
+network 10.0.3.0 0.0.0.3
+network 10.0.4.0 0.0.0.3
+quit
+
+quit
+quit
+save
+y
 
 
+```
+
+### R-3
+
+area 0
+network 10.0.0.0 0.0.0.3
+network 10.0.0.12 0.0.0.3
+network 10.0.0.16 0.0.0.3
+
+area 3
+network 10.0.5.0 0.0.0.3
+quit
+
+quit
+quit
+save
+y
 
 
+```
+
+### R-4
+
+```
+system-view
+ospf 1
+area 0
+network 10.0.0.4 0.0.0.3
+network 10.0.0.12 0.0.0.3
+quit
+
+quit
+quit
+save
+y
 
 
+```
 
+### 测试连通性
 
+```
+ping 192.168.64.1
+```
 
+```
+ping 192.168.65.1
+```
 
+```
+ping 192.168.66.1
+```
 
+```
+ping 192.168.67.1
+```
 
+```
+ping 192.168.68.1
+```
 
+```
+ping 192.168.69.1
+```
 
+```
+ping 192.168.70.1
+```
 
+```
+ping 192.168.71.1
+```
 
+```
+ping 192.168.72.1
+```
 
+```
+ping 192.168.73.1
+```
 
+```
+ping 192.168.74.1
+```
 
+```
+ping 192.168.75.1
+```
 
+### 查看 OSPF 配置
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
+system-view
+ospf 1
+display this
+```
 
 
 
