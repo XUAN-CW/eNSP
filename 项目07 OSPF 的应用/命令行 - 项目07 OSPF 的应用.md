@@ -430,9 +430,332 @@ ping 192.168.74.1
 ping 192.168.75.1
 ```
 
+# 任务04 配置路由接口地址
+
+### RS-1
+
+```
+system-view
+undo info-center enable
+sysname RS-1
+
+vlan 100
+quit
+interface vlanif 100
+ip address 10.0.1.2 30
+quit
+
+interface GigabitEthernet 0/0/1
+port link-type access
+port default vlan 100
+quit
+
+quit
+save
+y
 
 
-# 
+display ip routing-table
+
+```
+
+### RS-2
+
+```
+system-view
+undo info-center enable
+sysname RS-2
+
+vlan 100
+quit
+interface vlanif 100
+ip address 10.0.2.2 30
+quit
+
+interface GigabitEthernet 0/0/1
+port link-type access
+port default vlan 100
+quit
+
+quit
+save
+y
+
+display ip routing-table
+
+```
+
+### RS-3
+
+```
+system-view
+undo info-center enable
+sysname RS-3
+
+vlan 100
+quit
+interface vlanif 100
+ip address 10.0.3.2 30
+quit
+
+interface GigabitEthernet 0/0/1
+port link-type access
+port default vlan 100
+quit
+
+quit
+save
+y
+
+
+display ip routing-table
+
+```
+
+### RS-4
+
+```
+system-view
+undo info-center enable
+sysname RS-4
+
+vlan 100
+quit
+interface vlanif 100
+ip address 10.0.4.2 30
+quit
+
+interface GigabitEthernet 0/0/1
+port link-type access
+port default vlan 100
+quit
+
+quit
+save
+y
+
+
+display ip routing-table
+
+```
+
+### RS-5
+
+```
+system-view
+undo info-center enable
+sysname RS-5
+
+vlan 100
+quit
+interface vlanif 100
+ip address 10.0.5.2 30
+quit
+
+interface GigabitEthernet 0/0/1
+port link-type access
+port default vlan 100
+quit
+
+quit
+save
+y
+
+
+display ip routing-table
+
+```
+
+### RS-6
+
+```
+system-view
+undo info-center enable
+sysname RS-6
+
+vlan 100
+quit
+interface vlanif 100
+ip address 10.0.6.2 30
+quit
+
+interface GigabitEthernet 0/0/1
+port link-type access
+port default vlan 100
+quit
+
+quit
+save
+y
+
+
+display ip routing-table
+
+```
+
+### R-1
+
+```
+system-view
+undo info-center enable
+sysname R-1
+
+interface GigabitEthernet 0/0/0
+ip address 10.0.0.1 30
+quit
+interface GigabitEthernet 0/0/1
+ip address 10.0.1.1 30
+quit
+interface GigabitEthernet 0/0/2
+ip address 10.0.2.1 30
+quit
+interface GigabitEthernet 0/0/3
+ip address 10.0.0.9 30
+quit
+interface Ethernet 0/0/0
+ip address 10.0.0.5 30
+quit
+
+display ip routing-table
+
+quit
+save
+y
+
+
+```
+
+### R-2
+
+```
+system-view
+undo info-center enable
+sysname R-2
+
+interface GigabitEthernet 0/0/0
+ip address 10.0.0.10 30
+quit
+interface GigabitEthernet 0/0/1
+ip address 10.0.0.17 30
+quit
+interface GigabitEthernet 0/0/2
+ip address 10.0.3.1 30
+quit
+interface GigabitEthernet 0/0/3
+ip address 10.0.4.1 30
+quit
+
+display ip routing-table
+
+quit
+save
+y
+
+
+```
+
+### R-3
+
+```
+system-view
+undo info-center enable
+sysname R-3
+
+interface GigabitEthernet 0/0/0
+ip address 10.0.0.2 30
+quit
+interface GigabitEthernet 0/0/1
+ip address 10.0.6.1 30
+quit
+interface GigabitEthernet 0/0/2
+ip address 10.0.0.18 30
+quit
+interface GigabitEthernet 0/0/3
+ip address 10.0.5.1 30
+quit
+interface Ethernet 0/0/0
+ip address 10.0.0.13 30
+quit
+
+display ip routing-table
+
+quit
+save
+y
+
+
+```
+
+### R-4
+
+```
+system-view
+undo info-center enable
+sysname R-4
+
+interface Ethernet 0/0/0
+ip address 10.0.0.6 30
+quit
+interface Ethernet 0/0/1
+ip address 10.0.0.14 30
+quit
+
+display ip routing-table
+
+quit
+save
+y
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
