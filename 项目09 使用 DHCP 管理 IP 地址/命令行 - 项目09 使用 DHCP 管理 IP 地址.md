@@ -656,8 +656,13 @@ host fantasia{
 systemctl restart dhcpd
 ```
 
+### 更多配置
 
+```
+subnet 192.168.100.0 network 255.255.255.0{
     range 192.168.100.10 192.168.100.20;
+    option routers 192.168.100.254;
+    option broadcast-address 192.168.64.255;
 }
 ```
 
