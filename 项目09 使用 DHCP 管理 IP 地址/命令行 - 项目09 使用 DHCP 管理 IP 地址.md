@@ -537,37 +537,145 @@ subnet 192.168.71.0 network 255.255.255.0{
 }
 ```
 
+# 任务03 在园区网中实现 DHCP 服务
+
+### RS-1
+
+```
+system-view
+
+dhcp enable
+
+interface vlanif 11
+dhcp select relay
+dhcp relay server-ip 192.168.100.200
+quit
+interface vlanif 12
+dhcp select relay
+dhcp relay server-ip 192.168.100.200
+quit
+
+quit
+save
+y
 
 
+```
+
+### RS-2
+
+```
+system-view
+
+dhcp enable
+
+interface vlanif 13
+dhcp select relay
+dhcp relay server-ip 192.168.100.200
+quit
+interface vlanif 14
+dhcp select relay
+dhcp relay server-ip 192.168.100.200
+quit
+
+quit
+save
+y
 
 
+```
+
+### RS-3
+
+```
+system-view
+
+dhcp enable
+
+interface vlanif 15
+dhcp select relay
+dhcp relay server-ip 192.168.100.200
+quit
+interface vlanif 16
+dhcp select relay
+dhcp relay server-ip 192.168.100.200
+quit
+
+quit
+save
+y
 
 
+```
+
+### RS-4
+
+```
+system-view
+
+dhcp enable
+
+interface vlanif 17
+dhcp select relay
+dhcp relay server-ip 192.168.100.200
+quit
+interface vlanif 18
+dhcp select relay
+dhcp relay server-ip 192.168.100.200
+quit
+
+quit
+save
+y
 
 
+```
+
+# 任务04 管理 DHCP 服务器
+
+### 查看已分配 IP 地址信息
+
+```
+vi /var/lib/dhcpd/dhcpd.leases
+```
+
+### 为主机 Host-3 分配固定 IP 地址
+
+```
+vi /etc/dhcp/dhcpd.conf
+```
+
+```
+host fantasia{
+    hardware ethernet 54:89:98:1C:0F:54;
+    fixed-address 192.168.66.19;
+}
+```
+
+```
+systemctl restart dhcpd
+```
 
 
+    range 192.168.100.10 192.168.100.20;
+}
+```
 
+```
+option domain-name "test.com";
+```
 
+```
+option domain-name-servers 8.8.8.8;
+```
 
+```
+option host-name Host-1;
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
+option ntp-servers time.windows.com;
+```
 
 
 
