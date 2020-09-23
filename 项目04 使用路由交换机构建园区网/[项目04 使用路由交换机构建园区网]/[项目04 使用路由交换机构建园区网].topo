@@ -75,6 +75,16 @@
             <interfacePair lineName="Copper" srcIndex="22" srcBoundRectIsMoved="0" srcBoundRect_X="769.464478" srcBoundRect_Y="269.464478" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="1" tarBoundRectIsMoved="0" tarBoundRect_X="630.535522" tarBoundRect_Y="130.535538" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
         </line>
     </lines>
-    <shapes />
-    <txttips />
+    <shapes>
+        <shape type="1" filloption="1" color="16744448" upleftcorner="260,459" width="168" height="86" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="1" filloption="1" color="16744448" upleftcorner="229,375" width="0" height="0" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="1" filloption="1" color="16744448" upleftcorner="661,454" width="182" height="91" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="1" filloption="1" color="8454143" upleftcorner="460,459" width="82" height="83" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="1" filloption="1" color="8454143" upleftcorner="859,449" width="88" height="96" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="1" filloption="1" color="8454143" upleftcorner="244,334" width="0" height="0" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+    </shapes>
+    <txttips>
+        <txttip left="123" top="329" right="172" bottom="346" content="VLAN10" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16744193" charset="1" />
+        <txttip left="123" top="362" right="172" bottom="379" content="VLAN20" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-128" charset="1" />
+    </txttips>
 </topo>
